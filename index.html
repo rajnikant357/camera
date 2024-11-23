@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="heading">
-    <input type="file" capture="user">
-	<h1> Hello my name is Rajnikant Gaurav</h1>
-</div>
+    <div id="heading">
+        <h1>Take your beautiful picture</h1>
+    </div>
+    <div id="camera-container">
+        <button id="camera-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+        </button>
+        <input type="file" id="file-input" accept="image/*" capture="user" style="display: none;">
+    </div>
+    <div id="preview-container">
+        <img id="preview" alt="Captured image preview" style="display: none;">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
